@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<button id="button" class="hamburger">
+    <span class="burger"></span>
+    <span class="burger"></span>
+    <span class="burger"></span>
+</button>
+
+<div class="content">
+    <div class="flex">
+        <nav>
+            <ul id="links" class="navigation">
+                <li><a href="#0">Home</a></li>
+                <li><a href="#0">Our Team</a></li>
+                <li><a href="#0">Work</a></li>
+                <li><a href="#0">Services</a></li>
+                <li><a href="#0">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $("button").click(function() {
+        $(".hamburger").toggleClass("focus");
+        $(".content").toggleClass("show");
+    });
+
+    $("nav").click(function(){
+        $(".content").toggleClass('show');
+        $(".hamburger").toggleClass("focus");
+    });
+</script>
+
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+
+</body>
+</html>
